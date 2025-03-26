@@ -1,7 +1,8 @@
-*{
+/* Base styles */
+* {
     margin: 0;
-    box-sizing: border-box;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -10,13 +11,13 @@ body {
     color: #333;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    padding:0 20px;
+    padding: 0 20px;
 }
 
-h2.section-title{
+h2.section-title {
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -24,21 +25,22 @@ h2.section-title{
     line-height: 1.3;
 }
 
-h3{
+h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-p{
+p {
     margin-bottom: 15px;
     font-size: 15px;
 }
 
-.t-center{
+.text-center {
     text-align: center;
 }
-section{
+
+section {
     padding: 60px 0;
 }
 
@@ -54,42 +56,41 @@ section{
     transition: background-color 0.3s;
 }
 
-.cta-button:hover{ 
+.cta-button:hover {
     background-color: #e05a2b;
 }
 
-.cta-container{
+.cta-container {
     margin: 30px 0;
     text-align: center;
 }
 
-.double-column{
+.two-columns {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.double-column.reversed{
+.two-columns.reversed {
     flex-direction: row-reverse;
 }
 
-.text-column{
+.text-column {
     flex: 1;
 }
 
-
-.img-column {
+.image-column {
     flex: 1;
     min-height: 300px;
     background-color: #f0f0f0;
     border-radius: 8px;
 }
 
-.features{
+/* Features Section */
+.features-section {
     background-color: #fff;
     padding: 60px 0;
 }
-
 
 .features-container {
     position: relative;
@@ -102,7 +103,7 @@ section{
     min-height: 400px;
 }
 
-.f-img{
+.food-image-circle {
     position: absolute;
     width: 250px;
     height: 250px;
@@ -123,7 +124,7 @@ section{
     max-width: 250px;
 }
 
-.icon{
+.icon-placeholder {
     width: 40px;
     height: 40px;
     background-color: #e8f5e9;
@@ -136,28 +137,27 @@ section{
     align-self: end;
 }
 
-
 .top-right {
     justify-self: start;
     align-self: end;
 }
 
-.bottom-left{
+.bottom-left {
     justify-self: end;
     align-self: start;
 }
 
-.bottom-right{
-    justify-self:start;
+.bottom-right {
+    justify-self: start;
     align-self: start;
 }
 
-.payment{
+.payment-methods {
     text-align: center;
     margin-top: 20px;
 }
 
-.s-text{
+.small-text {
     font-size: 12px;
     color: #777;
 }
@@ -176,23 +176,23 @@ section{
     border-radius: 4px;
 }
 
-
-.nutrition{
+/* Nutrition Section */
+.nutrition-section {
     background-color: #f9f9f9;
     padding: 60px 0;
 }
 
-.key-points{
+.key-points {
     margin: 30px 0;
 }
 
-.item {
+.stat-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.percentage {
+.stat-percentage {
     font-size: 32px;
     font-weight: 700;
     color: #f47142;
@@ -201,12 +201,79 @@ section{
     min-width: 70px;
 }
 
-.health{
-    background-color:#fff ;
+/* GI Health Section */
+.gi-health-section {
+    background-color: #fff;
     padding: 60px 0;
 }
 
-.prebiotics{
+/* Prebiotics Section */
+.prebiotics-section {
     background-color: #f9f9f9;
     padding: 60px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .two-columns {
+        flex-direction: column;
+    }
+    
+    .two-columns.reversed {
+        flex-direction: column;
+    }
+    
+    .image-column {
+        width: 100%;
+    }
+    
+    .features-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+    
+    .food-image-circle {
+        position: relative;
+        margin: 30px auto;
+        grid-row: 3;
+        transform: none;
+        top: 0;
+        left: 0;
+    }
+    
+    .feature-box {
+        max-width: 100%;
+        justify-self: center;
+        text-align: center;
+    }
+    
+    .icon-placeholder {
+        margin: 0 auto 15px;
+    }
+    
+    .top-left, .top-right, .bottom-left, .bottom-right {
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h2.section-title {
+        font-size: 24px;
+    }
+    
+    .stat-percentage {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .food-image-circle {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .cta-button {
+        width: 100%;
+    }
 }
