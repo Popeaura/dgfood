@@ -83,7 +83,7 @@ section {
 
 .image-column {
     flex: 1;
-    min-height: 300px;
+    min-height: 400px;
     border-radius: 8px;
     overflow: hidden;
 }
