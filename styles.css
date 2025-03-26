@@ -1,4 +1,4 @@
-/* Base styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -93,7 +93,6 @@ section {
     display: block;
 }
 
-/* Features Section */
 .features-section {
     background-color: #fff;
     padding: 60px 0;
@@ -110,7 +109,7 @@ section {
     min-height: 400px;
 }
 
-.food-image-circle {
+.food-image{
     position: absolute;
     width: 250px;
     height: 250px;
@@ -122,7 +121,7 @@ section {
     overflow: hidden;
 }
 
-.food-image-circle img {
+.food-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -194,7 +193,6 @@ section {
     object-fit: contain;
 }
 
-/* Nutrition Section */
 .nutrition-section {
     background-color: #f9f9f9;
     padding: 60px 0;
@@ -219,13 +217,12 @@ section {
     min-width: 70px;
 }
 
-/* GI Health Section */
-.gi-health-section {
+.health-section {
     background-color: #fff;
     padding: 60px 0;
 }
 
-/* Prebiotics Section */
+
 .prebiotics-section {
     background-color: #f9f9f9;
     padding: 60px 0;
