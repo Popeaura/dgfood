@@ -1,4 +1,3 @@
-/* Base styles */
 * {
     margin: 0;
     padding: 0;
@@ -103,7 +102,7 @@ section {
     min-height: 400px;
 }
 
-.food-image-circle {
+.food-image{
     position: absolute;
     width: 250px;
     height: 250px;
@@ -176,7 +175,6 @@ section {
     border-radius: 4px;
 }
 
-/* Nutrition Section */
 .nutrition-section {
     background-color: #f9f9f9;
     padding: 60px 0;
@@ -201,13 +199,11 @@ section {
     min-width: 70px;
 }
 
-/* GI Health Section */
-.gi-health-section {
+.health-section {
     background-color: #fff;
     padding: 60px 0;
 }
 
-/* Prebiotics Section */
 .prebiotics-section {
     background-color: #f9f9f9;
     padding: 60px 0;
