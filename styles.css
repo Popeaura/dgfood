@@ -200,3 +200,13 @@ section{
     line-height: 1;
     min-width: 70px;
 }
+
+.health{
+    background-color:#fff ;
+    padding: 60px 0;
+}
+
+.prebiotics{
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
